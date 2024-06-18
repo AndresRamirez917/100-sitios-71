@@ -44,6 +44,7 @@ li {
 .subtitle {
   text-align: center;
   font-size: 2.5rem;
+  text-transform: capitalize;
   margin: 3rem 0;
 }
 
@@ -61,7 +62,7 @@ form .button {
   padding: 10px 20px;
   text-align: center;
   text-transform: uppercase;
-  background: linear-gradient(rgb(246, 2, 246), violet);
+  background: #000;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -69,6 +70,11 @@ form .button {
 
 img {
   max-width: 100%;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: violet;
 }
 
 #mainheader {
@@ -127,8 +133,11 @@ img {
 }
 
 #about {
-  background: linear-gradient(rgb(246, 2, 246), violet);
+  background: linear-gradient(rgb(246, 2, 246), rgb(249, 8, 124));
   color: #fff;
+}
+#about h2 {
+  padding-top: 4rem;
 }
 #about p {
   margin-bottom: 2rem;
@@ -141,7 +150,7 @@ img {
 }
 
 #contact {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 #contact form .flex-box-1 {
@@ -151,13 +160,26 @@ img {
 #social {
   width: 80%;
   margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 #social .social-row {
   display: flex;
+  gap: 300px;
+}
+#social .social-row img {
+  width: 10%;
+}
+#social .social-row .social-icons {
+  display: flex;
+  gap: 5px;
+}
+#social .social-row .social-icons img {
+  width: 50px;
 }
 
 #footer {
   text-align: center;
   padding: 3rem 0;
-  background: linear-gradient(rgb(246, 2, 246), violet);
+  background: linear-gradient(rgb(246, 2, 246), rgb(249, 8, 124));
 }/*# sourceMappingURL=styles.css.map */

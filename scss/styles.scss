@@ -48,10 +48,11 @@ li {
 .subtitle {
     text-align: center;
     font-size: 2.5rem;
+    text-transform: capitalize;
     margin: 3rem 0;
 }
 
-$gradient-bg : linear-gradient(rgb(246, 2, 246), violet);
+$gradient-bg : linear-gradient(rgb(246, 2, 246), rgb(249, 8, 124));
 
 form {
     .form-group {
@@ -68,7 +69,7 @@ form {
         padding: 10px 20px;
         text-align: center;
         text-transform: uppercase;
-        background: $gradient-bg;
+        background: #000;
         color: #fff;
         border: none;
         cursor: pointer;
@@ -77,6 +78,11 @@ form {
 
 img {
     max-width: 100%;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: violet;
 }
 
 
@@ -147,6 +153,9 @@ padding-bottom: 3rem;
 #about {
     background: $gradient-bg;
     color: #fff;
+    h2 {
+        padding-top: 4rem;
+    }
     p {
         margin-bottom: 2rem;
         text-align: center;
@@ -160,7 +169,7 @@ padding-bottom: 3rem;
 
 //contact
 #contact {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     form {
         .flex-box-1 {
@@ -173,8 +182,21 @@ padding-bottom: 3rem;
 #social {
     width: 80%;
     margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     .social-row {
         display: flex;
+        gap: 300px;
+        img {
+            width: 10%;
+        }
+        .social-icons {
+            display: flex;
+            gap: 5px;
+            img {
+                width: 50px;
+            }
+        }
     }
 }
 
