@@ -38,7 +38,7 @@ li {
   text-transform: capitalize;
   margin-top: 15rem;
   -webkit-text-stroke: 4px rgb(255, 255, 255);
-  color: transparent;
+  color: #000;
 }
 
 .subtitle {
@@ -140,7 +140,6 @@ img {
 #work .work-row {
   display: flex;
   gap: 30px;
-  margin-bottom: 10px;
 }
 #work .work-row img {
   width: 30%;
@@ -161,6 +160,10 @@ img {
   width: 70%;
   margin: 0 auto;
   display: flex;
+}
+#about .about-row .about-text p {
+  text-align: justify;
+  line-height: 25px;
 }
 
 #contact {

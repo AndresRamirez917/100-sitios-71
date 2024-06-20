@@ -42,7 +42,7 @@ li {
     text-transform: capitalize;
     margin-top: 15rem;
     -webkit-text-stroke: 4px rgb(255, 255, 255);
-    color: transparent; 
+    color: #000; 
 }
 
 .subtitle {
@@ -146,7 +146,6 @@ padding-bottom: 3rem;
     .work-row {
         display: flex;
         gap: 30px;
-        margin-bottom: 10px;
         img {
             width: 30%;
         }
@@ -168,6 +167,12 @@ padding-bottom: 3rem;
         width: 70%;
         margin: 0 auto;
         display: flex;
+        .about-text {
+            p {
+                text-align: justify;
+                line-height: 25px;
+            }
+        }
     }
 }
 
